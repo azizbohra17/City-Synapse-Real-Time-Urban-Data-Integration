@@ -41,7 +41,7 @@ def generate_gps_data(device_id, timestamp, vehicle_type='private'):
         'timestamp': timestamp,
         'speed': random.uniform(0, 40),  # km/h
         'direction': 'North-East',
-        'vehicle_type': vehicle_type,
+        'vehicleType': vehicle_type,
     }
 
 
