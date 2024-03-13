@@ -1,4 +1,4 @@
 /jobs/config.py
 .DS_Store
-/jobs/__pycache__
-.idea
+__pycache__/
+.idea/
