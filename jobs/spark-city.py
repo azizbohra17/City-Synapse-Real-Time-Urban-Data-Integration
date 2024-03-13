@@ -68,7 +68,7 @@ def main():
     ])
 
     # Emergency-data schema
-    emgergencySchema = StructType([
+    emergencySchema = StructType([
         StructField("id", StringType(), True),
         StructField("deviceId", StringType(), True),
         StructField("incidentId", StringType(), True),
@@ -104,7 +104,7 @@ def main():
     gpsDF = read_kafka_topic('gps_data', gpsSchema).alias('gps')
     trafficDF = read_kafka_topic('traffic_data', trafficSchema).alias('traffic')
     weatherDF = read_kafka_topic('weather_data', weatherSchema).alias('weather')
-    emergencyDF = read_kafka_topic('emergency_data', emgergencySchema).alias('emergency')
+    emergencyDF = read_kafka_topic('emergency_data', emergencySchema).alias('emergency')
 
     # Join all the dfs with id and timestamp
     # join
