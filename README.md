@@ -1,34 +1,33 @@
-Smart City Streaming
+# City Synapse: Real-Time Urban Data Integration
 
-Overview
+## Overview
+"City Synapse: Real-Time Urban Data Integration" is an end-to-end real-time data streaming pipeline designed to simulate and analyze data from a vehicle traveling from London to Birmingham. The project leverages a range of technologies including IoT devices, Apache Zookeeper, Apache Kafka, Apache Spark, Docker, Python, AWS Cloud (AWS S3, AWS Glue, AWS Athena, AWS IAM, AWS Redshift), and PowerBI for data visualization.
 
-"Smart City Streaming" is a real-time data processing project that simulates a smart city environment. It utilizes IoT devices, Apache Zookeeper, Apache Kafka, Apache Spark, Docker, Python, AWS Cloud services, and PowerBI to cover each phase from data ingestion to processing and finally storage and visualization.
+## Architecture
+The system architecture consists of the following components:
+- **IoT Devices**: Simulate the vehicle, GPS, weather, traffic, and emergency incident data.
+- **Apache Zookeeper & Kafka**: Manage and stream data from IoT devices.
+- **Apache Spark**: Process and analyze the streamed data in real-time.
+- **Docker**: Containerize the services for easy deployment and scaling.
+- **AWS Services**: Store, process, and analyze the data using AWS S3, AWS Glue, AWS Athena, and AWS Redshift.
+- **PowerBI**: Visualize the data stored in AWS Redshift.
 
-System Architecture
+## Setup and Installation
+1. **Docker**: Ensure Docker is installed on your machine. If not, download and install Docker from [Docker's official website](https://www.docker.com/).
+2. **Clone the Repository**: Clone this repository to your local machine using `git clone https://github.com/your-username/smart-city-streaming.git`.
+3. **Build and Run Docker Containers**: Navigate to the project directory and run `docker-compose up --build` to set up the Apache Zookeeper, Kafka, and Spark containers.
+4. **Configure AWS Services**: Set up AWS S3, Glue, Athena, and Redshift with the necessary permissions and configurations.
 
-The project architecture involves several components working together to simulate and process real-time data from a smart city:
+## Running the Simulation
+1. **Start Producers**: Run the IoT data producers to simulate vehicle, GPS, weather, traffic, and emergency incident data.
+2. **Stream Data to Kafka**: The simulated data is streamed to Kafka topics.
+3. **Process Data with Spark**: Apache Spark processes and analyzes the data in real-time.
+4. **Store Data in AWS S3**: The processed data is stored in an AWS S3 bucket.
+5. **Catalog Data with AWS Glue**: Use AWS Glue to catalog the data for easier querying.
+6. **Query Data with AWS Athena**: Analyze the data using SQL queries in AWS Athena.
+7. **Load Data into AWS Redshift**: Transfer the data to AWS Redshift for further analysis and visualization.
+8. **Visualize with PowerBI**: Connect PowerBI to AWS Redshift to create dashboards and visualizations.
 
-IoT Devices: Generate simulated data for various city aspects, including vehicle movements, GPS coordinates, traffic conditions, weather updates, and emergency incidents.
-Apache Zookeeper & Apache Kafka: Manage and stream data between different components.
-Apache Spark: Process the streaming data in real-time.
-Docker: Containerize the services for easier deployment and management.
-AWS Services: Store processed data (AWS S3), manage access (AWS IAM), catalog data (AWS Glue), query data (AWS Athena), and data warehousing (AWS Redshift).
-PowerBI: Visualize the processed data stored in Redshift.
-Setup and Installation
 
-Detailed setup and installation instructions can be found in the Project Setup section.
-
-Project Setup
-
-Docker Containers Setup: Set up Docker containers for Zookeeper, Kafka, and Spark.
-IoT Services Producer: Simulate IoT data for vehicles, GPS, traffic, weather, and emergency incidents.
-Producing IoT Data to Kafka: Stream the simulated data to Kafka topics.
-AWS S3 Setup: Configure S3 buckets for storing processed data.
-AWS IAM Roles and Credentials Management: Set up IAM roles and policies for secure access to AWS services.
-Apache Spark Realtime Streaming from Kafka: Process the streaming data using Spark structured streaming.
-AWS Glue Crawlers: Catalog the processed data in Glue for easier querying.
-Working with AWS Athena: Query the cataloged data using Athena.
-Loading Data into Redshift: Store the processed data in Redshift for analytics and visualization.
-Connecting and Querying Redshift: Use DBeaver to connect and query the Redshift data warehouse.
-Connecting Redshift to AWS Glue Catalog: Integrate Redshift with the Glue Data Catalog.
-Visualizing Data with PowerBI: Connect PowerBI to Redshift and create dashboards for data visualization.
+## Acknowledgements
+Special thanks to Yusuf Ganiyu for the comprehensive video tutorial that guided the development of this project.
