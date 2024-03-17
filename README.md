@@ -10,7 +10,6 @@ The system architecture consists of the following components:
 - **Apache Spark**: Process and analyze the streamed data in real-time.
 - **Docker**: Containerize the services for easy deployment and scaling.
 - **AWS Services**: Store, process, and analyze the data using AWS S3, AWS Glue, AWS Athena, and AWS Redshift.
-- **PowerBI**: Visualize the data stored in AWS Redshift.
 
 ![City Synapse](https://github.com/azizbohra17/City-Synapse-Real-Time-Urban-Data-Integration/assets/47524749/321a5329-edc2-4715-b8d9-77e03a70341e)
 
