@@ -12,6 +12,9 @@ The system architecture consists of the following components:
 - **AWS Services**: Store, process, and analyze the data using AWS S3, AWS Glue, AWS Athena, and AWS Redshift.
 - **PowerBI**: Visualize the data stored in AWS Redshift.
 
+![City Synapse](https://github.com/azizbohra17/City-Synapse-Real-Time-Urban-Data-Integration/assets/47524749/321a5329-edc2-4715-b8d9-77e03a70341e)
+
+
 ## Setup and Installation
 1. **Docker**: Ensure Docker is installed on your machine. If not, download and install Docker from [Docker's official website](https://www.docker.com/).
 2. **Clone the Repository**: Clone this repository to your local machine using `git clone https://github.com/your-username/smart-city-streaming.git`.
