@@ -1,7 +1,7 @@
 # City Synapse: Real-Time Urban Data Integration
 
 ## Overview
-"City Synapse: Real-Time Urban Data Integration" is an end-to-end real-time data streaming pipeline designed to simulate and analyze data from a vehicle traveling from London to Birmingham. The project leverages a range of technologies including IoT devices, Apache Zookeeper, Apache Kafka, Apache Spark, Docker, Python, AWS Cloud (AWS S3, AWS Glue, AWS Athena, AWS IAM, AWS Redshift), and PowerBI for data visualization.
+"City Synapse: Real-Time Urban Data Integration" is an end-to-end real-time data streaming pipeline designed to simulate and analyze data from a vehicle traveling from London to Birmingham. The project leverages a range of technologies including IoT devices, Apache Zookeeper, Apache Kafka, Apache Spark, Docker, Python, AWS Cloud (AWS S3, AWS Glue, AWS Athena, AWS IAM, and AWS Redshift).
 
 ## Architecture
 The system architecture consists of the following components:
@@ -26,7 +26,6 @@ The system architecture consists of the following components:
 5. **Catalog Data with AWS Glue**: Use AWS Glue to catalog the data for easier querying.
 6. **Query Data with AWS Athena**: Analyze the data using SQL queries in AWS Athena.
 7. **Load Data into AWS Redshift**: Transfer the data to AWS Redshift for further analysis and visualization.
-8. **Visualize with PowerBI**: Connect PowerBI to AWS Redshift to create dashboards and visualizations.
 
 
 ## Acknowledgements
